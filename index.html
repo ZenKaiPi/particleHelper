@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery/jquerymobile/jquery.mobile-1.4.5.min.css">
+<script src="jquery/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<title>index.html</title>
+</head>
+<body>
+
+<!-- Start of main page -->
+<div data-role="page" id="mainPage">
+  <div data-role="header">
+    <h1>Main Page</h1>
+  </div>
+  <div data-role="content">
+  		<div id="container">
+        	<div id="mainPageTitle" class="pageTitle">
+        		<h1>Particle Helper</h1>
+                <h4>Build the future of tomorrow, today.</h4>
+        	</div>
+            <div id="mainPageBody" class="centeredBody">
+            	<img src="images/analytics.jpg" alt="analytics" id="mainPageMainImage">
+            	<a href="#loginPage" class="ui-btn mainPageButton" data-inline="true" id="loginCreateAccountButton"  data-transition="fade">Login/Create Account</a>
+           		<a href="#" class="ui-btn mainPageButton" data-inline="true" id="aboutButton">About</a>
+                <a href="#contactPage" class="ui-btn mainPageButton" data-inline="true" id="contactUsButton">Contact</a>
+            </div>
+        </div>
+  </div>
+  <div data-role="footer">
+    <h4>Version 0.0.1</h4>
+  </div>
+</div>
+
+<!-- Start of Login Page -->
+<div data-role="page" id="loginPage">
+  <div data-role="header">
+    <h1>Login</h1>
+   <a href="#mainPage" data-role="button" data-icon="back" data-transition="flow">Back</a>
+   <a href="#" data-role="button" data-icon="info" data-iconpos="right">Help</a>
+  </div>
+  <div data-role="content">
+  	<div id="loginPageContainer">
+    <!-- Start of our Title -->
+    	<div id="loginPageTitle" class="pageTitle">
+        	<h1>Login</h1>
+  			<h3>Design your future of today</h3>
+        </div>
+    	<div id="loginPageBody" class="centeredBody">
+   <!-- This is where we have our input fields defined -->
+        	<label for="userNameInput" style="text-align:left">Username:</label>
+            <input type="text" id="userNameInput" class="loginInputField">
+            <label for="userNameInput" style="text-align:left">Password:</label>
+            <input type="text" id="userNameInput" class="loginInputField">
+            
+            <a href="#" data-role="button" data-inline="true" id="forgotPasswordButton" class="forgotPasswordLoginButton">Forgot Password</a>
+            <a href="#dashboard" data-role="button" data-inline="true" id="loginButton" class="forgotPasswordLoginButton"  data-transition="fade">Login</a><br>
+            <a href="#" data-role="button" id="createAccountButton">Create Account</a>
+        </div>
+    </div>
+  </div>
+  <div data-role="footer">
+    <h4>Version 0.0.1</h4>
+  </div>
+</div>
+
+<!-- Start of Particle Dashboard -->
+<div data-role="page" id="dashboard">
+  <div data-role="header">
+    <h1>Particle Dashboard</h1>
+   <a href="#loginPage" data-role="button" data-icon="back" data-transition="flow">Back</a>
+   <a href="#" data-role="button" data-icon="info" data-iconpos="right">Help</a>
+  </div>
+  <div data-role="content">
+  	<div id="dashboardContainer">
+    <!-- Start of our Title -->
+    	<div id="dashboardTitle" class="pageTitle">
+        	<h1>Particle Dashboard</h1>
+  			<h3>Design your future of today</h3>
+        </div>
+    	<div id="dashboardBody" class= "centeredBody">
+        	<img src="images/photon.jpg" id="dashboardMainImage">
+             <a href="#deviceManagementPage" data-role="button" data-transition="fade">Device Management</a>
+   			 <a href="#" data-role="button">Account Settings</a>
+        </div>
+    </div>
+  </div>
+  <div data-role="footer">
+    <h4>Version 0.0.1</h4>
+  </div>
+</div>
+
+
+<!-- Start of Device Management Page -->
+<div data-role="page" id="deviceManagementPage">
+  <div data-role="header">
+    <h1>Particle Dashboard</h1>
+   <a href="#dashboard" data-role="button" data-icon="back" data-transition="flow">Back</a>
+   <a href="#" data-role="button" data-icon="info" data-iconpos="right">Help</a>
+  </div>
+  <div data-role="content">
+  	<div id="deviceManagementContainer">
+    <!-- Start of our Title -->
+    	<div id="deviceManagementTitle">
+        	<h1>Particle Dashboard</h1>
+  			<h3>Design your future of today</h3>
+        </div>
+    	<div id="deviceManagementBody">
+        	 <ul data-role="listview">
+				<li><a href="#variableManagementPage">Device: XJ9</a><p class="ui-li-aside">Online:True</p></li>
+				<li><a href="#variableManagementPage">Device: Nightmare</a><p class="ui-li-aside">Online:True</p></li>
+				<li><a href="#variableManagementPage">Device: Dreamer</a><p class="ui-li-aside">Online:False</p></li>
+			 </ul><br>
+             <a href="#variableManagementPage" data-role="button">Add Device</a>
+        </div>
+    </div>
+  </div>
+  <div data-role="footer">
+    <h4>Version 0.0.1</h4>
+  </div>
+</div>
+
+<!-- Start of Variable Management Page -->
+<div data-role="page" id="variableManagementPage">
+  <div data-role="header">
+    <h1>Particle Dashboard</h1>
+   <a href="#deviceManagementPage" data-role="button" data-icon="back" data-transition="flow">Back</a>
+   <a href="#" data-role="button" data-icon="info" data-iconpos="right">Help</a>
+  </div>
+  <div data-role="content">
+  	<div id="variableManagementContainer">
+    <!-- Start of our Title -->
+    	<div id="variableManagementTitle">
+        	<h1>Variable Dashboard</h1>
+  			<h3>Device Name: Cloud variables</h3><br>
+        </div>
+    	<div id="variableManagementBody">
+        	 <ul data-role="listview">
+				<li><a href="acura.html">Variable Name: Moisture Sensor - Pot A</a></li>
+				<li><a href="audi.html">Variable Name: Moisture Sensor - Pot B</a></li>
+				<li><a href="bmw.html">Variable Name: Temp. Sensor - Pot A</a></li>
+                <li><a href="bmw.html">Variable Name: Temp. Sensor - Pot B</a></li>
+			 </ul><br>
+        </div>
+        <br><br>
+        <div id="variableStream">
+        <div id="variableStreamHeader">
+        	<h3>Variable Stream</h3>
+        </div>
+        
+        <p>Variable: Temp. Sensor - Pot A Log: 72 Time: Sat Nov 05 2016 20:30:24 GMT-0700</p>
+        <p>Variable: Moisutre Sensor - Pot A Log: 40 Time: Sat Nov 05 2016 20:30:24 GMT-0700</p>
+        <p>Variable: Temp. Sensor - Pot b Log: 74 Time: Sat Nov 05 2016 20:30:24 GMT-0700</p>
+        <br><br>
+        <button data-icon="delete" id="clearStreamButton">Clear Stream</button>
+        </div>
+    </div>
+  </div>
+  <div data-role="footer">
+    <h4>Version 0.0.1</h4>
+  </div>
+</div>
+
+<!-- Start of Contact Page -->
+<div data-role="page" id="contactPage">
+  <div data-role="header">
+    <h1>Contact Us</h1>
+   <a href="#mainPage" data-role="button" data-icon="back" data-transition="flow">Back</a>
+   <a href="#" data-role="button" data-icon="info" data-iconpos="right">Help</a>
+  </div>
+  <div data-role="content">
+  	<div id="contactPageContainer">
+    <!-- Start of our Title -->
+    	<div id="contactPageTitle" class="pageTitle">
+        	<h1>Particle Dashboard</h1>
+  			<h3>Design your future of today</h3>
+        </div>
+    	<div id="contactPageBody" class= "centeredBody">
+    	  <div data-role="fieldcontain">
+    	    <label for="textinput">First Name:</label>
+    	    <input type="text" name="textinput" id="firstNameTextinput" value=""  />
+  	    </div>
+        <div id="contactPageBody" class= "centeredBody">
+    	  <div data-role="fieldcontain">
+    	    <label for="textinput">Last Name:</label>
+    	    <input type="text" name="textinput" id="lastNameTextinput" value=""  />
+  	    </div>
+    	  <div data-role="fieldcontain">
+    	    <label for="email">Email:</label>
+    	    <input type="email" name="email" id="email" value=""  />
+  	    </div>
+        
+        
+             
+             
+             
+             <form>
+               <div data-role="fieldcontain">
+                 <label for="selectmenu" class="select">Job Title:</label>
+                 <select name="selectmenu" id="selectmenu">
+                   <option value="option1">Select</option>
+                   <option value="option1">Software Engineer</option>
+                   <option value="option2">Developer</option>
+                   <option value="option3">Student</option>
+                 </select>
+               </div>
+             	
+             
+             
+               <div data-role="fieldcontain">
+                 <label for="textarea">How can we help:</label>
+                 <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+               </div>
+               
+                <label>
+        			<input type="checkbox" name="checkbox-0 ">Subscribe to newsletter!
+    			</label>
+               
+               <input type="submit" value="Submit" data-icon="check" />
+               
+             </form>
+        </div>
+    </div>
+  </div>
+  <div data-role="footer">
+    <h4>Version 0.0.1</h4>
+  </div>
+</div>
+
+</body>
+</html>

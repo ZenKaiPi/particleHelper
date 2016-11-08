@@ -1,0 +1,62 @@
+/* CSS Document */
+
+.pageTitle {
+  	margin: 0 auto;
+	text-align: center;
+}
+
+.mainPageButton {
+	width: 300px;
+	height: 40px;
+	margin: 0 auto;
+	text-align: center;	
+	padding-top: 28px;
+}
+
+.loginInputField{
+	width: 50px;
+}
+
+
+.forgotPasswordLoginButton{
+	width: 175px;
+	height: 30px;
+}
+
+.centeredBody {
+	margin: 0 auto;
+	text-align: center;	
+}
+
+#mainPageMainImage {
+	width: 500px;
+	height: 300px;
+}
+
+
+#createAccountButton {
+	width: 400px;
+	height: 30px;
+	margin: 0 auto;
+	text-align: center;	
+}
+
+#dashboardMainImage {
+	width: 500px;
+	height: 300px;	
+}
+
+#variableStream {
+	width: 500px;
+	height: 500px;	
+	border: black solid 1px;
+}
+
+#variableStreamHeader {
+	border-bottom: black solid 1px;
+	text-align: center;
+}
+
+#clearStreamButton {
+
+}
